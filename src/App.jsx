@@ -1,12 +1,14 @@
-import navBar from "./components/navBar";
+import Nav_bar from "./components/Nav_bar";
+import { Home_Page } from "./pages/Home_Page";
 
 function App() {
   return (
-    <>
-      <div className="App">
-        <navBar />
+    <div>
+      <Nav_bar />
+      <div>
+        <Home_Page />
       </div>
-    </>
+    </div>
   );
 }
 
