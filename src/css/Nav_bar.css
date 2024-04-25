@@ -12,8 +12,9 @@
 .navContainer {
     display: flex;
     justify-content: center;
-    position: fixed;
 }
+
+
 
 
 @media (max-width: 1000px) {
