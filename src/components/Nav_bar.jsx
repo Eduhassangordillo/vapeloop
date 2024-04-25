@@ -1,34 +1,49 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import React from "react";
+import { NavLink } from "react-router-dom";
+import { Container, Nav, Navbar } from "react-bootstrap";
 
-function Nav_bar() {
+import logo from "./../img/svg/logo-horizontal-02.svg";
+import "../css/Nav_bar.css";
+
+const Nav_bar = () => {
+  let activeStyle = {
+    textDecoration: "underline",
+    fontWeight: "bold",
+  };
+
   return (
     <Navbar
       expand="lg"
-      className="bg-body-tertiary"
+      className="bg-body-tertiary navContainer "
       bg="dark"
       data-bs-theme="dark"
     >
-      <Container>
-        <Navbar.Brand href="#home">Ico-VapeLoop</Navbar.Brand>
+      <Container className="nav">
+        <Navbar.Brand>
+          <img src={logo} width="200" height="100" className="logo" />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Inicio</Nav.Link>
-            <Nav.Link href="#link">Ofertas</Nav.Link>
-            <NavDropdown title="Productos" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Pods</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Descartables</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Sales</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">Resistencias</NavDropdown.Item>
-            </NavDropdown>
+        <Navbar.Collapse id="basic-navbar-nav ">
+          <Nav className="me-auto navCollapse">
+            <NavLink
+              className="nav-link"
+              to="/"
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            >
+              Home
+            </NavLink>
+            <NavLink
+              className="nav-link"
+              to="/product"
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            >
+              Product
+            </NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
-}
+};
 
 export default Nav_bar;

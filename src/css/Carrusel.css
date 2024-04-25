@@ -1,0 +1,12 @@
+/* .Carrusel {} */
+
+
+/* .ItemCarrusel {} */
+
+.ImagenCarrusel {
+    width: 100%;
+    height: 400px;
+    object-fit: fill;
+}
+
+@media (min-width: 720px) {}

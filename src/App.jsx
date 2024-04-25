@@ -1,14 +1,22 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Home_Page from "./pages/Home_Page";
+import Product_Page from "./pages/Product_Page";
 import Nav_bar from "./components/Nav_bar";
-import { Home_Page } from "./pages/Home_Page";
+
+import "./css/App.css";
 
 function App() {
   return (
-    <div>
-      <Nav_bar />
-      <div>
-        <Home_Page />
+    <BrowserRouter>
+      <div className="sticky-top">
+        <Nav_bar />
       </div>
-    </div>
+      <Routes>
+        <Route path="/" element={<Home_Page />} />
+        <Route path="product" element={<Product_Page />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
