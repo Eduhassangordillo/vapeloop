@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.logo {
+    margin: -20px 0px -25px 0px;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+}
+
+
+@media (max-width: 1000px) {
+
+    .navCollapse {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .links {
+        width: 100px;
+    }
+
+}

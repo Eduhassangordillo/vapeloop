@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.conteiner {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 1000px;
+
+}
+
+
+
+.text {
+    padding: 10px;
+}
