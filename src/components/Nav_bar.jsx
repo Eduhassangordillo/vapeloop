@@ -5,7 +5,7 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import logo from "./../img/svg/logo-horizontal-02.svg";
 import "../css/Nav_bar.css";
 
-const Nav_bar = () => {
+const Nav_bar = ({ logIn, logOut, auth }) => {
   let activeStyle = {
     textDecoration: "underline",
     fontWeight: "bold",
@@ -39,6 +39,23 @@ const Nav_bar = () => {
             >
               Product
             </NavLink>
+          </Nav>
+          <Nav className="navbar-nav ms-auto mb-2 mb-lg-0">
+            {auth && (
+              <NavLink
+                className="nav-link "
+                to="/admin"
+                style={({ isActive }) => (isActive ? activeStyle : undefined)}
+              >
+                Admin
+              </NavLink>
+            )}
+            <button
+              className="btn btn-outline-light"
+              onClick={() => (auth ? logOut() : logIn())}
+            >
+              {auth ? "Log Out" : "Log In"}
+            </button>
           </Nav>
         </Navbar.Collapse>
       </Container>
