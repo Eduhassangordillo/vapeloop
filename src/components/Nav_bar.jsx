@@ -40,7 +40,7 @@ const Nav_bar = ({ logIn, logOut, auth }) => {
               Product
             </NavLink>
           </Nav>
-          <Nav className="navbar-nav ms-auto mb-2 mb-lg-0">
+          <Nav className=" navbar-nav ms-auto mb-2 mb-lg-0">
             {auth && (
               <NavLink
                 className="nav-link "
