@@ -1,7 +1,7 @@
 import Carousel from "react-bootstrap/Carousel";
-import foto1 from "./../img/jpg/IMG-20240413-WA0006.jpg";
-import foto2 from "./../img/jpg/IMG-20240413-WA0007.jpg";
-import foto3 from "./../img/jpg/IMG-20240413-WA0008.jpg";
+import foto1 from "";
+import foto2 from "";
+import foto3 from "";
 import "../css/Carrusel.css";
 
 import React from "react";

@@ -1,5 +1,5 @@
 import React from "react";
-import Carrusel from "../components/Carrusel";
+// import Carrusel from "../components/Carrusel";
 
 const Home_Page = () => {
   return (
@@ -7,9 +7,7 @@ const Home_Page = () => {
       <div className="row">
         <div className="col">
           <h1>Home Page</h1>
-          <div>
-            <Carrusel />
-          </div>
+          <div>{/* <Carrusel /> */}</div>
         </div>
       </div>
     </div>
