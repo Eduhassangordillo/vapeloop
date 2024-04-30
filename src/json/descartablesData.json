@@ -1,0 +1,37 @@
+[
+  {
+    "id": "desc0001",
+    "productName": "Elfbar 5000",
+    "image": "https://firebasestorage.googleapis.com/v0/b/vapeloop-storage.appspot.com/o/descartablesData%2FElfbar_5000.jpg?alt=media&token=c4a16f48-daf3-425b-b0fd-69a087915dea",
+    "description": "Disfruta de un sabor fresco y duradero con el Elfbar 5000. Perfecto para los amantes de los dispositivos desechables.",
+    "price": 10.99
+  },
+  {
+    "id": "desc0002",
+    "productName": "Elfbar TE5000",
+    "image": "https://firebasestorage.googleapis.com/v0/b/vapeloop-storage.appspot.com/o/descartablesData%2FElfbar_TE5000.jpg?alt=media&token=0a62dfeb-5860-45ff-8d16-1f1c34680392",
+    "description": "Con el Elfbar TE5000, experimenta un sabor suave y un diseño ergonómico. ¡Ideal para llevar a cualquier parte!",
+    "price": 12.49
+  },
+  {
+    "id": "desc0003",
+    "productName": "Geekbar b5000",
+    "image": "https://firebasestorage.googleapis.com/v0/b/vapeloop-storage.appspot.com/o/descartablesData%2FGeekbar_b5000.jpg?alt=media&token=a35fd418-adf9-4bb5-a9ba-56008baa7178",
+    "description": "El Geekbar b5000 es la elección perfecta para aquellos que buscan un dispositivo desechable con un diseño elegante y una experiencia de vapeo excepcional.",
+    "price": 9.99
+  },
+  {
+    "id": "desc0004",
+    "productName": "Ignite V50",
+    "image": "https://firebasestorage.googleapis.com/v0/b/vapeloop-storage.appspot.com/o/descartablesData%2FIgnite_V50.jpg?alt=media&token=7bd816e7-a9d3-4bc8-ab58-856d11a7e962",
+    "description": "El Ignite V50 ofrece una combinación única de sabor y rendimiento en un dispositivo compacto y fácil de usar. ¡Disfruta de la libertad de vapear en cualquier lugar!",
+    "price": 11.99
+  },
+  {
+    "id": "desc0005",
+    "productName": "Uwell B6000",
+    "image": "https://firebasestorage.googleapis.com/v0/b/vapeloop-storage.appspot.com/o/descartablesData%2FUwell_B6000.jpg?alt=media&token=69fa4858-249a-4de8-8c21-c5aa860401b2",
+    "description": "El Uwell B6000 es la opción perfecta para aquellos que buscan un dispositivo desechable potente y confiable. Con una duración de la batería excepcional, este dispositivo te acompañará todo el día.",
+    "price": 13.99
+  }
+]

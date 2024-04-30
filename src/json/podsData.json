@@ -1,0 +1,37 @@
+[
+  {
+    "id": "pod0001",
+    "productName": "Voopoo Vinci Q",
+    "image": "https://firebasestorage.googleapis.com/v0/b/vapeloop-storage.appspot.com/o/podsData%2FVoopoo_Vinci_Q.jpg?alt=media&token=5824af5b-4526-4d14-a263-e3b0d38cf70e",
+    "description": "Descubre el Voopoo Vinci Q, un pod compacto con una potencia sorprendente. Disfruta de un vapeo suave y consistente en cualquier lugar.",
+    "price": 29.99
+  },
+  {
+    "id": "pod0002",
+    "productName": "Vaporesso Zero 2",
+    "image": "https://firebasestorage.googleapis.com/v0/b/vapeloop-storage.appspot.com/o/podsData%2FVaporesso_Zero_2.jpg?alt=media&token=ec523e91-ca61-4249-ab14-76d40bee311d",
+    "description": "Con el Vaporesso Zero 2, tendrás un pod elegante y lleno de funciones. Disfruta de una experiencia de vapeo premium con este dispositivo compacto.",
+    "price": 34.99
+  },
+  {
+    "id": "pod0003",
+    "productName": "Vaporesso Xros 3 mini",
+    "image": "https://firebasestorage.googleapis.com/v0/b/vapeloop-storage.appspot.com/o/podsData%2FVaporesso_Xros_3_mini.jpg?alt=media&token=6d29aa4c-2507-4c32-8a19-079b5b78a594",
+    "description": "El Vaporesso Xros 3 mini es la última incorporación a la familia Xros, ofreciendo un diseño compacto y una experiencia de vapeo de alta calidad. ¡Descubre la comodidad y el rendimiento con este pod innovador!",
+    "price": 27.99
+  },
+  {
+    "id": "pod0004",
+    "productName": "Voopoo Vinci (Royal Edition)",
+    "image": "https://firebasestorage.googleapis.com/v0/b/vapeloop-storage.appspot.com/o/podsData%2FVoopoo_Vinci_(Royal_Edition).jpg?alt=media&token=434ce780-c2fb-4d80-9719-77037b762081",
+    "description": "La Voopoo Vinci (Royal Edition) combina estilo y rendimiento en un diseño elegante. Experimenta una potencia excepcional y una experiencia de vapeo personalizable con este pod innovador.",
+    "price": 39.99
+  },
+  {
+    "id": "pod0005",
+    "productName": "Vaporesso Xros Pro",
+    "image": "https://firebasestorage.googleapis.com/v0/b/vapeloop-storage.appspot.com/o/podsData%2FVaporesso_Xros_Pro.jpg?alt=media&token=70c3056f-dfce-4e7f-8d84-662a1c365739",
+    "description": "El Vaporesso Xros Pro lleva la experiencia de vapeo a un nuevo nivel con su diseño elegante y características avanzadas. Disfruta de un vapeo suave y satisfactorio en cualquier momento y lugar.",
+    "price": 31.99
+  }
+]

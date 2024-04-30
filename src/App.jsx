@@ -1,35 +1,62 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ProtectRoutes from "./routes/ProtectRoutes";
+
+import Home_Page from "./pages/Home_Page";
+import Admin_Page from "./pages/Admin_Page";
+import Product_Page from "./pages/Product_Page";
+import ProductDetailPage from "./components/ProductDetailPage";
+import Nav_bar from "./components/Nav_bar";
+import "./css/App.css";
+
+// Importa los archivos JSON de productos
+import descartablesData from "./json/descartablesData.json";
+import podsData from "./json/podsData.json";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [auth, setAuth] = useState(false);
+
+  const logIn = () => {
+    setAuth(true);
+  };
+
+  const logOut = () => {
+    setAuth(false);
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <BrowserRouter>
+      <div className="sticky-top">
+        <Nav_bar logIn={logIn} logOut={logOut} auth={auth} />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      <Routes>
+        <Route path="/" element={<Home_Page />} />
+        <Route
+          path="/product"
+          element={
+            <Product_Page descartables={descartablesData} pods={podsData} />
+          }
+        />
+        <Route
+          path="/product/:id"
+          element={
+            <ProductDetailPage
+              descartables={descartablesData}
+              pods={podsData}
+            />
+          }
+        />
+        <Route
+          path="/admin"
+          element={
+            <ProtectRoutes auth={auth}>
+              <Admin_Page />
+            </ProtectRoutes>
+          }
+        />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
